@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07121f">
+  <meta name="description" content="Denzong Tech helps Sikkim and Northeast India businesses grow with practical digital marketing, AI-assisted content, and local tourism enquiry tools.">
+  <title>Denzong Tech | Local Business Growth, Powered by AI</title>
+  <style>
+    :root{--bg:#07121f;--bg2:#0b1a2b;--panel:#0d2032;--panel2:#10283c;--line:rgba(170,210,229,.15);--text:#edf7ff;--muted:#a9bdcc;--teal:#5be2ce;--green:#b3f58a;--blue:#83b7ff;--purple:#c7a3ff;--orange:#ffc88a;--danger:#ffaaa7;--radius:22px;--shadow:0 24px 70px rgba(0,0,0,.28);--max:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 75% 1%,rgba(22,92,119,.22),transparent 38%),radial-gradient(ellipse at 0% 35%,rgba(48,93,127,.14),transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}body,button,input,select,textarea{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid rgba(91,226,206,.65);outline-offset:3px}.container{width:min(var(--max),calc(100% - 40px));margin:auto}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--teal);font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;font-weight:800}.eyebrow:before{content:"";width:20px;height:1px;background:currentColor}.section{padding:92px 0}.section-head{max-width:720px;margin:0 0 34px}.section-head h2{font-size:clamp(2rem,4vw,3.05rem);line-height:1.08;letter-spacing:-.045em;margin:14px 0}.section-head p{color:var(--muted);max-width:660px;margin:0}.accent{background:linear-gradient(105deg,var(--teal),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}.muted{color:var(--muted)}.small{font-size:.88rem}.tiny{font-size:.76rem;color:var(--muted)}.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid var(--line);border-radius:999px;font-size:.78rem;color:#d3e8f3;background:rgba(255,255,255,.025)}.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 10px rgba(179,245,138,.7)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 17px;border:1px solid transparent;border-radius:12px;font-weight:800;font-size:.92rem;transition:transform .2s ease,border-color .2s ease,background .2s ease;min-height:46px}.btn:hover{transform:translateY(-2px)}.btn-primary{background:linear-gradient(115deg,var(--teal),var(--green));color:#06201f;box-shadow:0 10px 30px rgba(91,226,206,.12)}.btn-secondary{border-color:var(--line);background:rgba(255,255,255,.035);color:var(--text)}.btn-soft{background:rgba(91,226,206,.09);border-color:rgba(91,226,206,.22);color:var(--teal)}.btn-full{width:100%}.btn:disabled{opacity:.55;cursor:not-allowed;transform:none}.text-link{color:var(--teal);font-weight:750}.text-link:hover{text-decoration:underline}.icon-box{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:rgba(91,226,206,.1);border:1px solid rgba(91,226,206,.18);font-size:1.28rem;flex:0 0 auto}.card{border:1px solid var(--line);background:linear-gradient(155deg,rgba(16,40,60,.95),rgba(10,25,40,.96));border-radius:var(--radius);box-shadow:var(--shadow)}.card-pad{padding:25px}.grid{display:grid;gap:18px}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}.divider{height:1px;background:var(--line);margin:22px 0}
+    /* Header + brand mark */
+    .header{position:sticky;top:0;z-index:50;background:rgba(7,18,31,.87);backdrop-filter:blur(18px);border-bottom:1px solid rgba(170,210,229,.09)}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}.brand{display:flex;align-items:center;gap:10px;min-width:max-content}.brand-mark{width:43px;height:43px;display:block;overflow:visible}.brand-name{display:flex;flex-direction:column;line-height:1.05;letter-spacing:.09em;font-weight:900;font-size:.9rem}.brand-name span:last-child{font-size:.67rem;letter-spacing:.26em;color:var(--teal);margin-top:5px}.nav-links{display:flex;gap:22px;align-items:center;color:#c4d7e3;font-size:.88rem}.nav-links a:hover{color:var(--teal)}.nav-actions{display:flex;align-items:center;gap:10px}.menu-toggle{display:none;color:var(--text);background:transparent;border:1px solid var(--line);border-radius:10px;width:44px;height:42px;font-size:1.3rem}
+    /* Hero */
+    .hero{padding:78px 0 66px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;left:-240px;top:35px;width:520px;height:520px;border:1px solid rgba(91,226,206,.075);border-radius:50%;box-shadow:0 0 0 50px rgba(91,226,206,.018),0 0 0 100px rgba(91,226,206,.012);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:50px;position:relative}.hero h1{font-size:clamp(2.7rem,5.6vw,5.05rem);line-height:.99;letter-spacing:-.065em;margin:22px 0 22px;max-width:750px}.hero-copy{font-size:1.08rem;color:#afc4d2;max-width:620px;line-height:1.8}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:27px 0 23px}.hero-proof{display:flex;gap:10px;flex-wrap:wrap}.hero-visual{position:relative;min-height:475px;display:grid;place-items:center}.orb-wrap{position:relative;width:min(100%,430px);aspect-ratio:1;display:grid;place-items:center}.orb-glow{position:absolute;inset:10%;border-radius:50%;background:radial-gradient(circle,rgba(91,226,206,.2),rgba(69,115,222,.08) 38%,transparent 70%);filter:blur(16px)}.orbit{position:absolute;border:1px solid rgba(91,226,206,.31);border-radius:50%;width:80%;height:36%;transform:rotate(-33deg);animation:orbit-spin 14s linear infinite}.orbit.orbit-two{width:88%;height:46%;transform:rotate(51deg);border-color:rgba(131,183,255,.28);animation-duration:19s;animation-direction:reverse}.orbit.orbit-three{width:68%;height:68%;transform:rotate(22deg);border-style:dashed;border-color:rgba(199,163,255,.22);animation-duration:30s}.orbit:before{content:"";position:absolute;top:7%;left:20%;width:9px;height:9px;border-radius:50%;background:var(--teal);box-shadow:0 0 20px var(--teal)}.orbit.orbit-two:before{top:auto;left:auto;bottom:14%;right:10%;background:var(--blue);box-shadow:0 0 20px var(--blue)}.core{position:relative;z-index:2;width:44%;aspect-ratio:1;border-radius:31%;display:grid;place-items:center;border:1px solid rgba(91,226,206,.35);background:linear-gradient(145deg,rgba(20,66,78,.88),rgba(13,30,61,.95));box-shadow:inset 0 0 40px rgba(91,226,206,.09),0 0 85px rgba(42,189,175,.12);transform:rotate(45deg)}.core-inner{transform:rotate(-45deg);text-align:center}.core strong{display:block;font-size:2.3rem;letter-spacing:-.09em}.core span{font-size:.69rem;letter-spacing:.18em;color:var(--teal);font-weight:850}.float-card{position:absolute;z-index:4;padding:13px 15px;display:flex;align-items:center;gap:11px;border:1px solid var(--line);border-radius:16px;background:rgba(10,26,42,.92);box-shadow:0 18px 55px rgba(0,0,0,.28);max-width:230px}.float-card b{display:block;font-size:.83rem}.float-card small{display:block;color:var(--muted);font-size:.71rem}.float-card.a{top:8%;left:0}.float-card.b{bottom:12%;right:-4%}.float-ico{font-size:1.5rem}.live-indicator{display:inline-flex;gap:7px;align-items:center;color:var(--green);font-size:.72rem;font-weight:800}.live-indicator:before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;box-shadow:0 0 10px currentColor}.hero-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:30px;max-width:560px}.metric{padding:14px 13px;border-left:1px solid var(--line)}.metric strong{display:block;font-size:1.05rem}.metric span{font-size:.76rem;color:var(--muted)}@keyframes orbit-spin{to{rotate:360deg}}
+    /* Focus */
+    .focus-strip{padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.014)}.focus-strip .inner{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.focus-label{color:var(--muted);font-size:.82rem}.focus-items{display:flex;gap:10px;flex-wrap:wrap}.focus-items span{font-size:.8rem;color:#d3e4ec;padding:7px 11px;border-radius:8px;background:rgba(255,255,255,.035);border:1px solid rgba(170,210,229,.08)}
+    /* Feature cards */
+    .service-card{padding:25px;position:relative;overflow:hidden;min-height:260px}.service-card:after{content:"";position:absolute;width:140px;height:140px;border-radius:50%;right:-75px;bottom:-75px;background:rgba(91,226,206,.06)}.service-card h3{margin:19px 0 9px;font-size:1.22rem}.service-card p{margin:0 0 17px;color:var(--muted);font-size:.91rem}.service-card .text-link{font-size:.88rem}.service-card .pill{margin-bottom:15px}.service-card:nth-child(2) .icon-box{background:rgba(131,183,255,.1);border-color:rgba(131,183,255,.22)}.service-card:nth-child(3) .icon-box{background:rgba(199,163,255,.1);border-color:rgba(199,163,255,.22)}
+    /* Tool workspace */
+    .tool-section{background:linear-gradient(180deg,transparent,rgba(14,43,61,.23),transparent)}.tools-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:20px;align-items:stretch}.tool-list{display:grid;gap:10px;align-content:start}.tool-pick{display:flex;gap:12px;align-items:center;text-align:left;border:1px solid var(--line);background:rgba(255,255,255,.025);padding:14px;border-radius:14px;color:var(--text);transition:.2s}.tool-pick:hover,.tool-pick.active{border-color:rgba(91,226,206,.48);background:rgba(91,226,206,.07)}.tool-pick .icon-box{width:40px;height:40px;font-size:1.1rem}.tool-pick b{display:block;font-size:.88rem}.tool-pick small{display:block;color:var(--muted);font-size:.74rem;margin-top:2px}.studio{padding:0;overflow:hidden;display:flex;flex-direction:column;min-height:585px}.studio-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:20px 22px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.022)}.studio-brand{display:flex;gap:12px;align-items:center}.studio-brand .icon-box{width:40px;height:40px}.studio-brand b{display:block}.studio-brand small{color:var(--muted);font-size:.75rem}.status-label{display:flex;align-items:center;gap:7px;font-size:.75rem;color:var(--muted)}.status-label .lamp{width:7px;height:7px;border-radius:50%;background:var(--orange)}.status-label.ready .lamp{background:var(--green)}.status-label.error .lamp{background:var(--danger)}.chat-feed{flex:1;min-height:280px;max-height:420px;overflow:auto;padding:21px;display:flex;flex-direction:column;gap:15px}.message{display:flex;gap:10px;max-width:94%;align-items:flex-start}.message.user{align-self:flex-end;flex-direction:row-reverse}.avatar{width:30px;height:30px;display:grid;place-items:center;flex:0 0 auto;border:1px solid var(--line);border-radius:10px;background:rgba(91,226,206,.09);font-size:.8rem}.message.user .avatar{background:rgba(131,183,255,.1)}.bubble{border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:4px 15px 15px 15px;padding:12px 14px;font-size:.87rem;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65;color:#deebf3}.message.user .bubble{background:rgba(91,226,206,.09);border-color:rgba(91,226,206,.15);border-radius:15px 4px 15px 15px}.bubble .thinking-dots{display:inline-flex;gap:4px}.thinking-dots i{height:5px;width:5px;background:var(--teal);border-radius:50%;animation:bounce 1s infinite ease-in-out}.thinking-dots i:nth-child(2){animation-delay:.12s}.thinking-dots i:nth-child(3){animation-delay:.24s}@keyframes bounce{50%{opacity:.25;transform:translateY(-3px)}}.chat-prompts{display:flex;gap:7px;flex-wrap:wrap;padding:0 21px 13px}.prompt-chip{font-size:.73rem;color:#d1e2eb;background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:99px;padding:7px 10px}.prompt-chip:hover{border-color:rgba(91,226,206,.4);color:var(--teal)}.chat-compose{padding:13px 17px 17px;border-top:1px solid var(--line);background:rgba(0,0,0,.08)}.chat-compose textarea{width:100%;resize:vertical;min-height:74px;max-height:180px;color:var(--text);background:rgba(2,10,18,.55);border:1px solid var(--line);border-radius:12px;padding:12px;outline:none}.compose-bottom{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:10px}.compose-bottom small{font-size:.7rem;color:var(--muted)}.tool-note{color:var(--muted);font-size:.78rem;margin:16px 0 0;line-height:1.65}
+    /* Stay request form */
+    .stay-section{position:relative}.stay-shell{display:grid;grid-template-columns:.84fr 1.16fr;overflow:hidden}.stay-info{padding:35px;background:linear-gradient(150deg,rgba(16,58,69,.85),rgba(9,28,44,.96));border-right:1px solid var(--line)}.stay-info h3{font-size:1.75rem;line-height:1.15;letter-spacing:-.04em;margin:19px 0 12px}.stay-info p{color:#bbced9;font-size:.93rem}.stay-list{padding:0;list-style:none;margin:24px 0 0;display:grid;gap:12px}.stay-list li{display:flex;gap:10px;align-items:flex-start;color:#d7e7ef;font-size:.86rem}.tick{color:var(--green);font-weight:900}.stay-form-wrap{padding:30px}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field{display:flex;flex-direction:column;gap:7px;min-width:0}.field.full{grid-column:1/-1}.field label{font-size:.8rem;color:#d4e4ed;font-weight:750}.field input,.field select,.field textarea{width:100%;min-width:0;border:1px solid rgba(170,210,229,.18);border-radius:11px;background:#071522;color:var(--text);padding:12px 13px;outline:none}.field input::placeholder,.field textarea::placeholder{color:#7890a3}.field select option{background:#071522}.field textarea{min-height:92px;resize:vertical}.field .hint{font-size:.72rem;color:var(--muted)}.form-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.form-message{padding:12px 13px;border-radius:11px;font-size:.83rem;margin-top:13px;display:none}.form-message.show{display:block}.form-message.success{background:rgba(179,245,138,.08);border:1px solid rgba(179,245,138,.22);color:#d7ffbc}.form-message.error{background:rgba(255,170,167,.08);border:1px solid rgba(255,170,167,.22);color:#ffd4d2}.stay-disclaimer{margin:16px 0 0;padding:12px;border-left:2px solid var(--orange);background:rgba(255,200,138,.045);font-size:.77rem;color:#c8d4dc}
+    /* Audience cards */
+    .audience-card{padding:22px;display:flex;gap:14px;align-items:flex-start}.audience-card h3{margin:0 0 6px;font-size:1rem}.audience-card p{margin:0;color:var(--muted);font-size:.83rem}.audience-card .icon-box{width:42px;height:42px;font-size:1.1rem}
+    /* Pricing */
+    .pricing-topline{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}.pricing-card{padding:24px;display:flex;flex-direction:column;min-height:100%}.pricing-card.featured{border-color:rgba(91,226,206,.48);box-shadow:0 22px 75px rgba(38,187,167,.09);position:relative}.popular{position:absolute;right:16px;top:16px;color:#082321;background:linear-gradient(110deg,var(--teal),var(--green));font-size:.66rem;font-weight:900;text-transform:uppercase;padding:5px 8px;border-radius:6px;letter-spacing:.04em}.plan-label{font-size:.75rem;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;font-weight:900}.plan-title{font-size:1.35rem;margin:7px 0 4px}.plan-desc{font-size:.83rem;color:var(--muted);min-height:43px;margin:0}.price{font-size:2.4rem;line-height:1.25;font-weight:900;letter-spacing:-.06em;margin:20px 0 2px}.price span{font-size:.8rem;letter-spacing:0;color:var(--muted);font-weight:550}.price-detail{font-size:.75rem;color:var(--muted)}.feature-list{list-style:none;padding:0;margin:21px 0 25px;display:grid;gap:11px;flex:1}.feature-list li{display:flex;gap:9px;font-size:.82rem;color:#d4e2eb}.feature-list li:before{content:"✓";color:var(--green);font-weight:900}.setup-prices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}.setup-item{padding:17px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.025)}.setup-item b{display:block;font-size:.87rem;margin-bottom:5px}.setup-item strong{font-size:1.1rem;color:var(--teal)}.setup-item span{display:block;font-size:.73rem;color:var(--muted);margin-top:5px}.price-note{font-size:.77rem;color:var(--muted);margin-top:20px}
+    /* Flow + CTA */
+    .step{padding:24px;position:relative}.step-num{display:grid;place-items:center;width:35px;height:35px;border-radius:10px;background:rgba(91,226,206,.1);border:1px solid rgba(91,226,206,.22);color:var(--teal);font-weight:900;margin-bottom:18px}.step h3{font-size:1rem;margin:0 0 8px}.step p{font-size:.84rem;color:var(--muted);margin:0}.cta-band{padding:37px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:25px;background:radial-gradient(ellipse at 0 0,rgba(91,226,206,.13),transparent 55%),linear-gradient(120deg,#102a3e,#0b1b2b);border:1px solid rgba(91,226,206,.23);border-radius:26px}.cta-band h2{font-size:clamp(1.7rem,3.2vw,2.65rem);letter-spacing:-.045em;line-height:1.1;margin:10px 0}.cta-band p{color:var(--muted);margin:0;max-width:650px}
+    /* Contact & footer */
+    .contact-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px}.contact-info{padding:26px}.contact-info h3{font-size:1.5rem;line-height:1.2;margin:15px 0 12px}.contact-info p{color:var(--muted);font-size:.9rem}.contact-points{display:grid;gap:14px;margin-top:25px}.contact-point{display:flex;gap:12px;align-items:center}.contact-point .icon-box{height:40px;width:40px;font-size:1rem}.contact-point b{display:block;font-size:.85rem}.contact-point small{display:block;color:var(--muted);font-size:.76rem;overflow-wrap:anywhere}.contact-form{padding:25px}.footer{padding:28px 0 35px;border-top:1px solid var(--line);background:rgba(0,0,0,.08)}.footer-main{display:flex;justify-content:space-between;align-items:flex-start;gap:25px;flex-wrap:wrap}.footer-copy{max-width:450px;color:var(--muted);font-size:.8rem;margin-top:13px}.footer-links{display:flex;gap:17px;flex-wrap:wrap;color:#c9dbe5;font-size:.82rem}.footer-bottom{border-top:1px solid var(--line);margin-top:25px;padding-top:17px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#7f98a9;font-size:.73rem}
+    /* Toast */
+    .toast{position:fixed;z-index:100;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;max-width:min(560px,calc(100% - 28px));padding:13px 16px;border-radius:13px;background:#123047;border:1px solid rgba(91,226,206,.32);color:var(--text);box-shadow:var(--shadow);font-size:.85rem;transition:.25s ease}.toast.show{opacity:1;transform:translate(-50%,0)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:980px){.nav-links{gap:14px}.nav-links a{font-size:.82rem}.hero-grid{gap:24px}.hero-visual{min-height:400px}.tools-layout{grid-template-columns:.72fr 1.28fr}.grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}.stay-shell{grid-template-columns:.78fr 1.22fr}}
+    @media(max-width:760px){.container{width:min(var(--max),calc(100% - 28px))}.section{padding:70px 0}.nav{min-height:68px}.menu-toggle{display:block}.nav-actions>.btn{display:none}.nav-links{display:none;position:absolute;top:68px;left:14px;right:14px;background:#0a1b2b;border:1px solid var(--line);padding:15px;border-radius:15px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:11px 8px;border-bottom:1px solid rgba(170,210,229,.08);font-size:.92rem}.nav-links a:last-child{border-bottom:0}.hero{padding:60px 0 50px}.hero-grid{grid-template-columns:1fr}.hero h1{font-size:clamp(2.65rem,12vw,4.3rem)}.hero-copy{font-size:1rem}.hero-visual{min-height:350px;margin-top:-8px}.orb-wrap{max-width:350px}.float-card.a{left:0;top:4%}.float-card.b{right:0;bottom:5%}.hero-metrics{margin-top:22px}.focus-strip .inner{align-items:flex-start;flex-direction:column}.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}.tools-layout{grid-template-columns:1fr}.tool-list{grid-template-columns:repeat(2,minmax(0,1fr))}.tool-pick{padding:11px;align-items:flex-start;min-width:0}.tool-pick .icon-box{width:33px;height:33px;border-radius:10px}.tool-pick b{font-size:.78rem}.tool-pick small{font-size:.69rem}.studio{min-height:570px}.chat-feed{max-height:390px}.stay-shell{grid-template-columns:1fr}.stay-info{border-right:0;border-bottom:1px solid var(--line);padding:26px}.stay-form-wrap{padding:22px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.setup-prices{grid-template-columns:1fr}.cta-band{grid-template-columns:1fr;padding:27px}.cta-band .btn{width:100%}.contact-layout{grid-template-columns:1fr}.footer-main{flex-direction:column}.pricing-card{min-height:auto}}
+    @media(max-width:410px){.container{width:calc(100% - 22px)}.brand-name{font-size:.79rem}.brand-name span:last-child{font-size:.61rem}.brand-mark{width:38px;height:38px}.hero-actions .btn{width:100%}.tool-list{grid-template-columns:1fr}.tool-pick{align-items:center}.hero-metrics{gap:4px}.metric{padding:10px 7px}.metric strong{font-size:.93rem}.metric span{font-size:.69rem}.form-actions .btn{width:100%}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Denzong Tech home">
+        <svg class="brand-mark" viewBox="0 0 60 60" role="img" aria-label="Denzong Tech mountain circuit logo">
+          <defs><linearGradient id="markGrad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5be2ce"/><stop offset="1" stop-color="#b3f58a"/></linearGradient></defs>
+          <path d="M6 43 20 21l8 11L37 16l17 27H6Z" fill="none" stroke="url(#markGrad)" stroke-width="2.4" stroke-linejoin="round"/>
+          <path d="M14 43h32M22 30l7 5 8-9 8 10" fill="none" stroke="#83b7ff" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="20" cy="21" r="3" fill="#5be2ce"/><circle cx="37" cy="16" r="3" fill="#b3f58a"/><circle cx="46" cy="36" r="2.5" fill="#83b7ff"/>
+          <path d="M20 21 13 13M37 16l7-7M46 36l8 2" fill="none" stroke="#5be2ce" stroke-width="1.2"/>
+          <circle cx="12" cy="12" r="2" fill="#5be2ce"/><circle cx="45" cy="8" r="2" fill="#b3f58a"/><circle cx="55" cy="38" r="2" fill="#83b7ff"/>
+        </svg>
+        <span class="brand-name"><span>DENZONG</span><span>TECH</span></span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="#platform">Platform</a><a href="#ai-studio">Denzong AI</a><a href="#stay">Denzong Stay</a><a href="#pricing">Packages</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions"><a class="btn btn-primary" href="#contact">Book a consultation <span aria-hidden="true">↗</span></a><button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">☰</button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <span class="pill"><span class="dot"></span> Built for local business realities</span>
+          <h1>Local business.<br><span class="accent">Bigger possibilities.</span></h1>
+          <p class="hero-copy">Denzong Tech helps businesses in Sikkim and Northeast India show up online, communicate with customers, and turn more enquiries into real conversations — with practical digital services and AI-assisted tools.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#ai-studio">Try Denzong AI <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="#pricing">Explore packages</a></div>
+          <div class="hero-proof"><span class="pill">✦ Human-reviewed AI</span><span class="pill">↗ WhatsApp-first workflow</span><span class="pill">⌁ Made for local businesses</span></div>
+          <div class="hero-metrics"><div class="metric"><strong>Local-first</strong><span>Sikkim & Northeast focus</span></div><div class="metric"><strong>Simple</strong><span>Practical monthly packages</span></div><div class="metric"><strong>Connected</strong><span>People + digital tools</span></div></div>
+        </div>
+        <div class="hero-visual" aria-label="Animated Denzong Tech AI-inspired graphic">
+          <div class="orb-wrap"><div class="orb-glow"></div><div class="orbit"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="core"><div class="core-inner"><strong>DT</strong><span>LOCAL × AI</span></div></div>
+            <div class="float-card a"><span class="float-ico">✦</span><div><b>AI-assisted content</b><small>Drafts made for your business</small></div></div>
+            <div class="float-card b"><span class="float-ico">↗</span><div><b>Enquiry to conversation</b><small>Human follow-up matters</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="focus-strip"><div class="container inner"><span class="focus-label">Designed around the way small businesses work</span><div class="focus-items"><span>Hotels & homestays</span><span>Cafés & restaurants</span><span>Local products</span><span>Shops & startups</span><span>Tourism services</span></div></div></div>
+
+    <section class="section" id="platform">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">One clear starting point</span><h2>A practical growth system, <span class="accent">not just another website.</span></h2><p>Start with a service that helps a business this month. Add automation only when it genuinely saves time. Denzong Tech is designed to grow in stages instead of promising every feature on day one.</p></div>
+        <div class="grid grid-3">
+          <article class="card service-card"><div class="icon-box">↗</div><span class="pill">Start here</span><h3>Denzong Growth</h3><p>Social content, business profiles, WhatsApp reply templates, offer campaigns and monthly enquiry summaries — with a clear service scope.</p><a href="#pricing" class="text-link">View growth packages →</a></article>
+          <article class="card service-card"><div class="icon-box">⌂</div><h3>Denzong Stay</h3><p>A local accommodation discovery and enquiry concept for hotels and homestays. Guests send requests; property owners confirm actual availability and pricing.</p><a href="#stay" class="text-link">Send a stay enquiry →</a></article>
+          <article class="card service-card"><div class="icon-box">✳</div><h3>Denzong Market</h3><p>Product storytelling and simple catalogues for local products — from achar and food products to crafts and small retail offers.</p><a href="#ai-studio" class="text-link">Draft product content →</a></article>
+        </div>
+        <p class="tool-note">The current release is a starter platform. It does not yet have live hotel inventory, customer accounts, online payments, a marketplace checkout, or automatic booking confirmation.</p>
+      </div>
+    </section>
+
+    <section class="section tool-section" id="ai-studio">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Denzong AI workspace</span><h2>Your practical <span class="accent">digital work assistant.</span></h2><p>Choose a business task, add the details you know, and ask Denzong AI for a draft you can review and use. The AI service becomes active after its secure backend is configured in Netlify.</p></div>
+        <div class="tools-layout">
+          <div class="tool-list" aria-label="AI tools">
+            <button class="tool-pick active" type="button" data-tool="Marketing caption" data-prompt="Create 3 engaging social-media captions for my business. Ask me for business name, product/service, audience, offer and tone if missing. Include a clear call to action and relevant hashtags without making unsupported claims."><span class="icon-box">✎</span><span><b>Social caption</b><small>Ready-to-edit posts</small></span></button>
+            <button class="tool-pick" type="button" data-tool="Product description" data-prompt="Write a persuasive, truthful product description for a local Sikkim/Northeast product. Ask for the product name, ingredients/materials, size, price and verified differentiators if missing. Do not make health, organic, certification or origin claims unless I provide evidence."><span class="icon-box">◈</span><span><b>Product description</b><small>Local product storytelling</small></span></button>
+            <button class="tool-pick" type="button" data-tool="WhatsApp reply" data-prompt="Draft 3 polite, natural WhatsApp replies for a customer enquiry. Offer a short friendly version, a professional version, and a follow-up version. Use placeholders for information I have not supplied; do not promise unverified availability or prices."><span class="icon-box">☏</span><span><b>WhatsApp replies</b><small>Respond clearly and quickly</small></span></button>
+            <button class="tool-pick" type="button" data-tool="Offer campaign" data-prompt="Plan a small-budget 7-day promotional campaign for a Sikkim/Northeast small business. Include offer ideas, daily post topics, calls to action and what results to track. Keep claims honest and ask for budget and target audience if needed."><span class="icon-box">◉</span><span><b>Offer campaign</b><small>Make a simple promotion plan</small></span></button>
+            <button class="tool-pick" type="button" data-tool="Hotel listing" data-prompt="Create a clear hotel or homestay listing draft. Use only the property facts I provide. Include location, room types, amenities, policies, contact method and a note that availability and rates must be reconfirmed. Never invent reviews or facilities."><span class="icon-box">⌂</span><span><b>Hotel listing draft</b><small>Present a property clearly</small></span></button>
+            <button class="tool-pick" type="button" data-tool="Business action plan" data-prompt="Create a realistic 30-day growth action plan for my small business with limited budget. Separate immediate actions, weekly content, customer follow-up and simple measures. Avoid guaranteed sales claims; state assumptions and keep the plan practical."><span class="icon-box">✧</span><span><b>30-day action plan</b><small>Turn ideas into next steps</small></span></button>
+          </div>
+          <div class="card studio" aria-label="Denzong AI chat workspace">
+            <div class="studio-head"><div class="studio-brand"><div class="icon-box">✦</div><div><b>Denzong AI</b><small>Business content & growth assistant</small></div></div><div class="status-label" id="ai-status"><span class="lamp"></span><span id="ai-status-text">Checking backend…</span></div></div>
+            <div class="chat-feed" id="chat-feed" aria-live="polite" aria-label="Chat messages"><div class="message assistant"><div class="avatar">DT</div><div class="bubble">Namaste! I’m Denzong AI. Pick a tool on the left or tell me what your business needs. I can help draft content and practical next steps; please review facts before publishing.</div></div></div>
+            <div class="chat-prompts"><button class="prompt-chip" type="button" data-quick="Write a launch post for my local business in Sikkim.">Launch post</button><button class="prompt-chip" type="button" data-quick="Give me 5 ways to get more customer enquiries without a large budget.">More enquiries</button><button class="prompt-chip" type="button" data-quick="Create a polite WhatsApp follow-up for a customer who has not replied.">Follow-up message</button></div>
+            <form class="chat-compose" id="ai-form">
+              <label for="ai-input" class="sr-only">Describe the task for Denzong AI</label><textarea id="ai-input" maxlength="6000" placeholder="Describe your business and what you need…" required></textarea>
+              <div class="compose-bottom"><small id="char-count">0 / 6000 · AI replies may need fact-checking</small><button class="btn btn-primary" type="submit" id="ai-send">Generate draft <span aria-hidden="true">↗</span></button></div>
+            </form>
+          </div>
+        </div>
+        <p class="tool-note">Privacy reminder: do not paste passwords, payment details, identity documents, private customer records or confidential business information into the AI chat. AI responses are drafts, not legal, tax or regulatory advice.</p>
+      </div>
+    </section>
+
+    <section class="section stay-section" id="stay">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Denzong Stay · pilot concept</span><h2>Planning a trip to Sikkim? <span class="accent">Start an enquiry.</span></h2><p>Tell us what kind of stay you are looking for. This form captures a request so the team can follow up; it does not show live room inventory or confirm a reservation.</p></div>
+        <div class="card stay-shell">
+          <div class="stay-info"><span class="pill">⌂ Local accommodation enquiries</span><h3>A more personal way to start planning.</h3><p>Use this early enquiry flow for destinations such as Ravangla, Namchi, Gangtok and Pelling while verified accommodation partners are onboarded.</p>
+            <ul class="stay-list"><li><span class="tick">✓</span><span>Share your destination, dates and budget in one request.</span></li><li><span class="tick">✓</span><span>Ask for verified property details and current rates before deciding.</span></li><li><span class="tick">✓</span><span>Confirm availability, payment and cancellation terms directly with the property or an authorised representative.</span></li></ul>
+            <div class="divider"></div><p class="small"><b>For hotel & homestay owners</b><br>Join the pilot by submitting your business details through the contact form. Listings should be published only after owner permission and verification.</p><a class="btn btn-secondary" href="#contact">List my property <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="stay-form-wrap">
+            <form name="stay-enquiries" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="stay-form">
+              <input type="hidden" name="form-name" value="stay-enquiries"><p class="sr-only"><label>Leave this empty: <input name="bot-field"></label></p>
+              <div class="form-grid">
+                <div class="field"><label for="stay-name">Your name *</label><input id="stay-name" name="name" autocomplete="name" required maxlength="90" placeholder="Full name"></div>
+                <div class="field"><label for="stay-phone">Phone / WhatsApp *</label><input id="stay-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="20" placeholder="Contact number"></div>
+                <div class="field"><label for="stay-destination">Destination *</label><select id="stay-destination" name="destination" required><option value="">Choose destination</option><option>Ravangla</option><option>Namchi</option><option>Gangtok</option><option>Pelling</option><option>Other / flexible</option></select></div>
+                <div class="field"><label for="stay-kind">Type of stay</label><select id="stay-kind" name="stay-type"><option>Any suitable stay</option><option>Homestay</option><option>Hotel</option><option>Resort</option><option>Guest house</option><option>Budget room</option></select></div>
+                <div class="field"><label for="stay-checkin">Check-in date *</label><input id="stay-checkin" name="check-in" type="date" required></div>
+                <div class="field"><label for="stay-checkout">Check-out date *</label><input id="stay-checkout" name="check-out" type="date" required></div>
+                <div class="field"><label for="stay-guests">Guests</label><select id="stay-guests" name="guests"><option>1 guest</option><option selected>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></div>
+                <div class="field"><label for="stay-budget">Approx. budget / night</label><select id="stay-budget" name="budget"><option>Not sure yet</option><option>Under ₹1,500</option><option>₹1,500–₹3,000</option><option>₹3,000–₹5,000</option><option>₹5,000+</option></select></div>
+                <div class="field full"><label for="stay-notes">Requirements (optional)</label><textarea id="stay-notes" name="requirements" maxlength="700" placeholder="For example: parking, family room, accessibility, preferred area…"></textarea><span class="hint">Please don't add identity document numbers or payment details.</span></div>
+              </div>
+              <div class="form-actions"><button class="btn btn-primary" type="submit" id="stay-submit">Send stay enquiry <span aria-hidden="true">↗</span></button><button class="btn btn-secondary" type="button" id="stay-whatsapp">Send through WhatsApp</button></div>
+              <div class="form-message" id="stay-message" role="status"></div>
+              <p class="stay-disclaimer">Important: this is an enquiry only. Your stay is not reserved until the accommodation provider confirms availability, final price, taxes, check-in conditions and cancellation terms.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="who-we-help">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Who we help</span><h2>Built for businesses with <span class="accent">limited time, not limited ambition.</span></h2><p>Different businesses need different support. Start with the task causing the most friction and expand only when it is useful.</p></div>
+        <div class="grid grid-2">
+          <article class="card audience-card"><div class="icon-box">⌂</div><div><h3>Hotels & homestays</h3><p>Clear listing copy, enquiry response templates, seasonal offers and enquiry tracking.</p></div></article>
+          <article class="card audience-card"><div class="icon-box">♨</div><div><h3>Cafés & restaurants</h3><p>Menu descriptions, event announcements, offer captions and polite customer replies.</p></div></article>
+          <article class="card audience-card"><div class="icon-box">◈</div><div><h3>Local product makers</h3><p>Product stories, basic catalogue copy, launch campaigns and retail enquiry responses.</p></div></article>
+          <article class="card audience-card"><div class="icon-box">▦</div><div><h3>Retail shops & startups</h3><p>Business profiles, simple campaigns, WhatsApp follow-ups and small, trackable experiments.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="pricing-topline"><div class="section-head"><span class="eyebrow">Transparent starting packages</span><h2>Start small. <span class="accent">Grow with proof.</span></h2><p>These are proposed pilot prices for testing demand. We agree on the exact deliverables, schedule and approval process before work starts.</p></div><span class="pill">No guaranteed sales claims</span></div>
+        <div class="grid grid-3">
+          <article class="card pricing-card"><div class="plan-label">For getting started</div><h3 class="plan-title">Starter</h3><p class="plan-desc">A manageable digital presence for a small business.</p><div class="price">₹499 <span>/ month</span></div><div class="price-detail">Suggested pilot package</div><div class="divider"></div><ul class="feature-list"><li>Approved business profile/listing support</li><li>Up to 4 social-media post drafts per month</li><li>WhatsApp contact-button guidance</li><li>Basic monthly enquiry summary, where data is provided</li><li>One reasonable revision per post</li></ul><a class="btn btn-secondary btn-full package-cta" href="#contact" data-package="Starter — ₹499/month">Choose Starter</a></article>
+          <article class="card pricing-card featured"><span class="popular">Pilot favourite</span><div class="plan-label">For consistent marketing</div><h3 class="plan-title">Growth</h3><p class="plan-desc">More consistent content and customer follow-up support.</p><div class="price">₹1,499 <span>/ month</span></div><div class="price-detail">Suggested pilot package</div><div class="divider"></div><ul class="feature-list"><li>Everything in Starter</li><li>Up to 8 social-media post drafts per month</li><li>Offer/campaign captions and calls to action</li><li>WhatsApp response templates and lead tracker</li><li>Monthly summary and next-step recommendations</li></ul><a class="btn btn-primary btn-full package-cta" href="#contact" data-package="Growth — ₹1,499/month">Choose Growth</a></article>
+          <article class="card pricing-card"><div class="plan-label">For active campaigns</div><h3 class="plan-title">Premium</h3><p class="plan-desc">More frequent content with a small campaign plan.</p><div class="price">₹2,999 <span>/ month</span></div><div class="price-detail">Suggested pilot package</div><div class="divider"></div><ul class="feature-list"><li>Everything in Growth</li><li>Up to 12 social-media post drafts per month</li><li>Up to 2 short video edits/month from client-supplied footage</li><li>Monthly campaign plan and review</li><li>Priority support within agreed working hours</li></ul><a class="btn btn-secondary btn-full package-cta" href="#contact" data-package="Premium — ₹2,999/month">Choose Premium</a></article>
+        </div>
+        <div class="section-head" style="margin-top:35px;margin-bottom:15px"><h3 style="font-size:1.35rem;margin:0 0 7px">One-time setup services</h3><p class="small">Clear one-off work for a business that is not ready for a monthly package.</p></div>
+        <div class="setup-prices"><div class="setup-item"><b>Basic business profile</b><strong>₹499</strong><span>Business information arranged into a clean draft.</span></div><div class="setup-item"><b>Hotel / homestay listing draft</b><strong>₹999</strong><span>Listing copy based on verified details supplied by the owner.</span></div><div class="setup-item"><b>Local product catalogue copy</b><strong>₹799</strong><span>Starter catalogue text; photography and printing are separate.</span></div></div>
+        <div class="grid grid-3" style="margin-top:16px">
+          <div class="card card-pad"><span class="plan-label">Denzong Stay</span><h3 style="margin:9px 0">Free pilot listing</h3><p class="small muted" style="margin:0">Consider a free first 90-day listing pilot for selected, permission-verified properties. Future commission or fees should be agreed in writing before any paid arrangement.</p></div>
+          <div class="card card-pad"><span class="plan-label">Denzong AI add-on</span><h3 style="margin:9px 0">Proposed ₹499 / month</h3><p class="small muted" style="margin:0">Offer only after the AI backend is stable, costs and usage limits are clear, and human review arrangements are agreed.</p></div>
+          <div class="card card-pad"><span class="plan-label">Custom work</span><h3 style="margin:9px 0">Quote first</h3><p class="small muted" style="margin:0">Websites, photography, paid ad spend, travel, printing, taxes and work beyond the defined limits are quoted separately.</p></div>
+        </div>
+        <p class="price-note">Important: these prices are starting hypotheses, not verified market averages or offers that guarantee sales. Define turnaround time, revisions, client responsibilities, approval process, payment date and cancellation terms in writing before accepting payment.</p>
+      </div>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">How it works</span><h2>Simple steps. <span class="accent">Clear responsibility.</span></h2><p>Use the platform to generate interest and organise enquiries. Keep real-world decisions and confirmations with the right people.</p></div>
+        <div class="grid grid-4">
+          <article class="card step"><div class="step-num">01</div><h3>Tell us your goal</h3><p>Share the business type, audience and service you need. Only provide details required for the task.</p></article>
+          <article class="card step"><div class="step-num">02</div><h3>Create a draft</h3><p>Denzong AI can help with drafts after its backend and API key are configured. A person reviews factual claims.</p></article>
+          <article class="card step"><div class="step-num">03</div><h3>Publish & respond</h3><p>The business approves the content, shares it, and follows up with customers using a clear contact channel.</p></article>
+          <article class="card step"><div class="step-num">04</div><h3>Track what happened</h3><p>Record enquiries, replies and completed work. Use the results to decide whether to continue or change the approach.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact-cta">
+      <div class="container"><div class="cta-band"><div><span class="eyebrow">Start with one useful outcome</span><h2>Let’s make your next business step clearer.</h2><p>Ask about a marketing package, a local product catalogue, or joining the Denzong Stay pilot. We’ll begin with a short conversation and agree on a realistic scope.</p></div><a class="btn btn-primary" href="#contact">Talk to Denzong Tech <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Contact & onboarding</span><h2>Tell us what your <span class="accent">business needs.</span></h2><p>Send an enquiry for marketing support, a local product catalogue, AI tools or a property listing. Please do not share confidential or sensitive information.</p></div>
+        <div class="contact-layout">
+          <aside class="card contact-info"><span class="pill">Denzong Tech · Sikkim & Northeast India</span><h3>Small-business support, with a local-first approach.</h3><p>We start by understanding the business, agreeing on deliverables and setting a practical first goal. Availability and delivery dates are confirmed separately.</p>
+            <div class="contact-points"><div class="contact-point"><div class="icon-box">☏</div><div><b>WhatsApp enquiries</b><small>Use the enquiry form or WhatsApp handoff after the contact number is configured.</small></div></div><div class="contact-point"><div class="icon-box">✦</div><div><b>AI-enabled, human-reviewed</b><small>AI drafts need a person to check facts, tone and suitability before publication.</small></div></div><div class="contact-point"><div class="icon-box">⌂</div><div><b>Local-first focus</b><small>Tourism businesses, local products, shops and services across Sikkim and the Northeast.</small></div></div></div>
+          </aside>
+          <div class="card contact-form">
+            <form name="business-leads" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact-form">
+              <input type="hidden" name="form-name" value="business-leads"><p class="sr-only"><label>Leave this empty: <input name="bot-field"></label></p>
+              <div class="form-grid">
+                <div class="field"><label for="contact-name">Your name *</label><input id="contact-name" name="name" autocomplete="name" required maxlength="90" placeholder="Name"></div>
+                <div class="field"><label for="contact-phone">Phone / WhatsApp *</label><input id="contact-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="20" placeholder="Contact number"></div>
+                <div class="field"><label for="contact-business">Business name *</label><input id="contact-business" name="business-name" required maxlength="120" placeholder="Your business / brand"></div>
+                <div class="field"><label for="contact-location">Location *</label><input id="contact-location" name="location" required maxlength="120" placeholder="Town / district"></div>
+                <div class="field full"><label for="contact-service">What do you need? *</label><select id="contact-service" name="service" required><option value="">Choose a service</option><option>Starter — ₹499/month</option><option>Growth — ₹1,499/month</option><option>Premium — ₹2,999/month</option><option>Business profile setup — ₹499</option><option>Hotel / homestay listing — ₹999</option><option>Local product catalogue — ₹799</option><option>Denzong Stay property pilot</option><option>Denzong AI tools (when enabled)</option><option>Custom enquiry / consultation</option></select></div>
+                <div class="field full"><label for="contact-message">Tell us a little more</label><textarea id="contact-message" name="message" maxlength="1200" placeholder="Your product/service, target customers, current challenge and preferred next step…"></textarea></div>
+              </div>
+              <div class="form-actions"><button class="btn btn-primary" id="contact-submit" type="submit">Send business enquiry <span aria-hidden="true">↗</span></button><button class="btn btn-secondary" id="contact-whatsapp" type="button">Continue on WhatsApp</button></div>
+              <div class="form-message" id="contact-message-status" role="status"></div>
+              <p class="tiny" style="margin:13px 0 0">By submitting, you ask Denzong Tech to contact you about this enquiry. Do not include passwords, bank details, ID numbers or sensitive personal data.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="privacy" style="padding-top:0">
+      <div class="container"><details class="card card-pad"><summary style="cursor:pointer;font-weight:800">Privacy, AI and service limitations</summary><div class="divider"></div><div class="small muted"><p>Contact and stay enquiry forms are intended to be processed by Netlify Forms when the site is deployed and form detection is active. The site owner should review submissions, limit access and configure deletion/retention practices. Avoid collecting unnecessary information.</p><p>AI requests are sent to the configured Google Gemini API through the Netlify Function. The API key stays on the server when configured correctly; never put it in this HTML. Provider usage, retention, free-tier and paid-tier terms may differ and may change. Check current terms before using real customer or confidential business data.</p><p>Denzong Stay is an enquiry flow only. No live rates, verified accommodation inventory, automated reservation, customer account, payment gateway, tax calculation, refund system or partner dashboard is included in this starter project. Do not describe an enquiry as confirmed. Property owners must verify listings and confirm availability and terms.</p><p>This page is a starter privacy notice, not a substitute for a complete privacy policy or professional legal review. Before commercial launch, prepare appropriate terms, privacy practices, customer support and service-provider agreements.</p></div></details></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-main"><div><a class="brand" href="#home"><svg class="brand-mark" viewBox="0 0 60 60" aria-hidden="true"><path d="M6 43 20 21l8 11L37 16l17 27H6Z" fill="none" stroke="#5be2ce" stroke-width="2.4" stroke-linejoin="round"/><path d="M14 43h32M22 30l7 5 8-9 8 10" fill="none" stroke="#83b7ff" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="21" r="3" fill="#5be2ce"/><circle cx="37" cy="16" r="3" fill="#b3f58a"/></svg><span class="brand-name"><span>DENZONG</span><span>TECH</span></span></a><p class="footer-copy">AI-assisted business growth and local digital services for Sikkim and Northeast India. Start small, verify facts, and build trust one customer at a time.</p></div><div class="footer-links"><a href="#platform">Platform</a><a href="#ai-studio">Denzong AI</a><a href="#stay">Denzong Stay</a><a href="#pricing">Packages</a><a href="#contact">Contact</a><a href="#privacy">Privacy note</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> Denzong Tech. All rights reserved.</span><span>Website starter · features depend on backend and service configuration.</span></div></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+  (() => {
+    "use strict";
+    // IMPORTANT: Replace with your real WhatsApp number: country code + number, digits only.
+    // Example format: 919876543210. Do not include +, spaces or dashes.
+    const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+    const AI_ENDPOINT = "/.netlify/functions/ai";
+    const $ = (selector, root = document) => root.querySelector(selector);
+    const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
+    const toast = $("#toast");
+    let toastTimer;
+    let activeTool = "Marketing caption";
+    let chatHistory = [];
+    let backendConfigured = false;
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add("show");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove("show"), 4300);
+    }
+
+    function configuredWhatsAppNumber() {
+      return /^\d{10,15}$/.test(WHATSAPP_NUMBER) && !WHATSAPP_NUMBER.includes("XXXXXXXXXX");
+    }
+
+    function openWhatsApp(message) {
+      if (!configuredWhatsAppNumber()) {
+        showToast("WhatsApp is not configured yet. Replace 91XXXXXXXXXX in public/index.html with your real contact number.");
+        return false;
+      }
+      const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+      window.open(url, "_blank", "noopener,noreferrer");
+      return true;
+    }
+
+    // Mobile navigation
+    const menuToggle = $("#menu-toggle");
+    const navLinks = $("#nav-links");
+    menuToggle.addEventListener("click", () => {
+      const open = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(open));
+      menuToggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+      menuToggle.textContent = open ? "×" : "☰";
+    });
+    $$("#nav-links a").forEach(link => link.addEventListener("click", () => {
+      navLinks.classList.remove("open"); menuToggle.setAttribute("aria-expanded", "false"); menuToggle.textContent = "☰";
+    }));
+
+    // AI workspace. Responses are inserted via textContent to prevent HTML injection.
+    const chatFeed = $("#chat-feed");
+    const aiForm = $("#ai-form");
+    const aiInput = $("#ai-input");
+    const aiSend = $("#ai-send");
+    const charCount = $("#char-count");
+    const aiStatus = $("#ai-status");
+    const aiStatusText = $("#ai-status-text");
+    aiInput.addEventListener("input", () => { charCount.textContent = `${aiInput.value.length} / 6000 · AI replies may need fact-checking`; });
+
+    function setAiStatus(kind, text) {
+      aiStatus.classList.remove("ready", "error");
+      if (kind) aiStatus.classList.add(kind);
+      aiStatusText.textContent = text;
+    }
+
+    function addMessage(role, text) {
+      const row = document.createElement("div");
+      row.className = `message ${role}`;
+      const avatar = document.createElement("div"); avatar.className = "avatar"; avatar.textContent = role === "user" ? "You" : "DT";
+      const bubble = document.createElement("div"); bubble.className = "bubble"; bubble.textContent = text;
+      row.append(avatar, bubble); chatFeed.appendChild(row); chatFeed.scrollTop = chatFeed.scrollHeight;
+      return row;
+    }
+
+    function addThinking() {
+      const row = document.createElement("div"); row.className = "message assistant";
+      const avatar = document.createElement("div"); avatar.className = "avatar"; avatar.textContent = "DT";
+      const bubble = document.createElement("div"); bubble.className = "bubble"; bubble.setAttribute("aria-label", "Denzong AI is thinking");
+      const dots = document.createElement("span"); dots.className = "thinking-dots";
+      for (let i = 0; i < 3; i++) { const dot = document.createElement("i"); dots.appendChild(dot); }
+      bubble.appendChild(dots); row.append(avatar, bubble); chatFeed.appendChild(row); chatFeed.scrollTop = chatFeed.scrollHeight;
+      return row;
+    }
+
+    async function checkBackend() {
+      try {
+        const response = await fetch(AI_ENDPOINT, { method: "GET", headers: { "Accept": "application/json" }, cache: "no-store" });
+        const data = await response.json().catch(() => ({}));
+        if (!response.ok || !data.ok) throw new Error(data.error || `Backend returned HTTP ${response.status}.`);
+        backendConfigured = Boolean(data.aiConfigured);
+        if (backendConfigured) setAiStatus("ready", "AI backend ready");
+        else setAiStatus("", "Backend ready · key needed");
+      } catch (error) {
+        backendConfigured = false;
+        setAiStatus("error", "Backend not reachable");
+        console.warn("Denzong AI health check:", error?.message || error);
+      }
+    }
+
+    async function sendAiMessage(textOverride) {
+      const message = String(textOverride ?? aiInput.value).trim();
+      if (!message) { showToast("Please type what you need first."); return; }
+      if (message.length > 6000) { showToast("Please shorten your message to 6,000 characters or fewer."); return; }
+      aiInput.value = ""; charCount.textContent = "0 / 6000 · AI replies may need fact-checking";
+      addMessage("user", message);
+      const previousHistory = chatHistory.slice(-8);
+      chatHistory.push({ role: "user", text: message });
+      aiSend.disabled = true; aiSend.textContent = "Working…";
+      const thinking = addThinking();
+      try {
+        const response = await fetch(AI_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify({ message, tool: activeTool, history: previousHistory }),
+        });
+        const data = await response.json().catch(() => ({}));
+        thinking.remove();
+        if (!response.ok || !data.ok || !data.answer) {
+          const err = data.error || `Denzong AI returned HTTP ${response.status}. Open the backend health link in the setup instructions to diagnose it.`;
+          addMessage("assistant", `I couldn’t complete that request.\n\n${err}`);
+          setAiStatus("error", response.status === 503 ? "API key needed" : "AI request failed");
+          showToast(response.status === 503 ? "Add GEMINI_API_KEY in Netlify and redeploy to enable AI." : "AI request failed. See the chat message for the next step.");
+          return;
+        }
+        addMessage("assistant", data.answer);
+        chatHistory.push({ role: "assistant", text: data.answer });
+        chatHistory = chatHistory.slice(-8);
+        backendConfigured = true; setAiStatus("ready", "AI backend ready");
+      } catch (error) {
+        thinking.remove();
+        const detail = error?.message || "Network error";
+        addMessage("assistant", `I could not connect to the Denzong AI backend.\n\nCheck that the site was deployed from GitHub with netlify/functions/ai.mjs and netlify.toml in the repository. Then open ${AI_ENDPOINT} directly. If that page is 404, the function was not deployed. If it says the API key is missing, add GEMINI_API_KEY in Netlify and redeploy.\n\nTechnical detail: ${detail}`);
+        setAiStatus("error", "Backend not reachable");
+      } finally {
+        aiSend.disabled = false; aiSend.innerHTML = 'Generate draft <span aria-hidden="true">↗</span>';
+      }
+    }
+
+    aiForm.addEventListener("submit", event => { event.preventDefault(); sendAiMessage(); });
+    $$(".tool-pick").forEach(button => button.addEventListener("click", () => {
+      $$(".tool-pick").forEach(item => item.classList.remove("active")); button.classList.add("active");
+      activeTool = button.dataset.tool || "Business assistant";
+      aiInput.value = button.dataset.prompt || "Help me with a business task.";
+      charCount.textContent = `${aiInput.value.length} / 6000 · AI replies may need fact-checking`;
+      aiInput.focus();
+      $("#ai-studio").scrollIntoView({ behavior: "smooth", block: "start" });
+    }));
+    $$(".prompt-chip").forEach(button => button.addEventListener("click", () => {
+      activeTool = "Business assistant"; aiInput.value = button.dataset.quick || "Help me grow my business.";
+      charCount.textContent = `${aiInput.value.length} / 6000 · AI replies may need fact-checking`;
+      aiInput.focus();
+    }));
+
+    // Netlify Forms submission: this stores submissions in Netlify when form detection is active.
+    async function submitNetlifyForm(form, messageBox, successText, button) {
+      messageBox.className = "form-message"; messageBox.textContent = "";
+      const originalText = button.textContent;
+      button.disabled = true; button.textContent = "Sending…";
+      try {
+        const formData = new FormData(form);
+        if (!formData.get("form-name")) formData.set("form-name", form.getAttribute("name"));
+        const encoded = new URLSearchParams();
+        for (const [key, value] of formData.entries()) encoded.append(key, String(value));
+        const response = await fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: encoded.toString() });
+        if (!response.ok) throw new Error(`Form submission returned HTTP ${response.status}.`);
+        messageBox.textContent = successText + " Please wait for a separate reply; no booking or service agreement is automatically confirmed.";
+        messageBox.classList.add("show", "success");
+        form.reset();
+        showToast("Enquiry submitted. Check the message beside the form.");
+      } catch (error) {
+        messageBox.textContent = "The online form could not confirm submission. Please use the WhatsApp button, or check that Netlify Forms detected this form after deployment.";
+        messageBox.classList.add("show", "error");
+        console.warn("Netlify form submission:", error?.message || error);
+      } finally {
+        button.disabled = false; button.textContent = originalText;
+      }
+    }
+
+    const contactForm = $("#contact-form");
+    contactForm.addEventListener("submit", event => {
+      event.preventDefault();
+      if (!contactForm.reportValidity()) return;
+      submitNetlifyForm(contactForm, $("#contact-message-status"), "Thank you — your business enquiry was submitted.", $("#contact-submit"));
+    });
+    $("#contact-whatsapp").addEventListener("click", () => {
+      const name = $("#contact-name").value.trim(); const business = $("#contact-business").value.trim();
+      const phone = $("#contact-phone").value.trim(); const location = $("#contact-location").value.trim();
+      const service = $("#contact-service").value; const note = $("#contact-message").value.trim();
+      if (!name || !business || !phone || !location || !service) { showToast("Please fill name, phone, business, location and service first."); contactForm.reportValidity(); return; }
+      openWhatsApp(`Hello Denzong Tech, I would like to enquire about your services.\nName: ${name}\nBusiness: ${business}\nPhone: ${phone}\nLocation: ${location}\nService: ${service}\nDetails: ${note || "Not provided"}`);
+    });
+
+    const stayForm = $("#stay-form");
+    const today = new Date(); const localDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+    $("#stay-checkin").min = localDate; $("#stay-checkout").min = localDate;
+    $("#stay-checkin").addEventListener("change", () => { const inDate = $("#stay-checkin").value; $("#stay-checkout").min = inDate || localDate; if ($("#stay-checkout").value && inDate && $("#stay-checkout").value <= inDate) $("#stay-checkout").value = ""; });
+    stayForm.addEventListener("submit", event => {
+      event.preventDefault();
+      if (!stayForm.reportValidity()) return;
+      const checkin = $("#stay-checkin").value; const checkout = $("#stay-checkout").value;
+      if (!checkin || !checkout || checkout <= checkin) { showToast("Check-out must be after check-in."); $("#stay-checkout").focus(); return; }
+      submitNetlifyForm(stayForm, $("#stay-message"), "Thank you — your stay enquiry was submitted.", $("#stay-submit"));
+    });
+    $("#stay-whatsapp").addEventListener("click", () => {
+      const name = $("#stay-name").value.trim(); const phone = $("#stay-phone").value.trim();
+      const destination = $("#stay-destination").value; const kind = $("#stay-kind").value;
+      const checkin = $("#stay-checkin").value; const checkout = $("#stay-checkout").value;
+      if (!name || !phone || !destination || !checkin || !checkout || checkout <= checkin) { showToast("Please fill name, phone, destination and valid dates first."); stayForm.reportValidity(); return; }
+      openWhatsApp(`Hello Denzong Tech, I have a stay enquiry (not a confirmed booking).\nName: ${name}\nContact: ${phone}\nDestination: ${destination}\nStay type: ${kind}\nCheck-in: ${checkin}\nCheck-out: ${checkout}\nGuests: ${$("#stay-guests").value}\nBudget: ${$("#stay-budget").value}\nRequirements: ${$("#stay-notes").value.trim() || "None"}\nPlease let me know what verified options may be available.`);
+    });
+
+    // Pricing buttons preselect the matching service in the contact form.
+    $$(".package-cta").forEach(button => button.addEventListener("click", () => {
+      const select = $("#contact-service"); const wanted = button.dataset.package || "";
+      const option = Array.from(select.options).find(item => item.textContent.trim() === wanted);
+      if (option) select.value = option.value;
+    }));
+
+    $("#year").textContent = new Date().getFullYear();
+    checkBackend();
+  })();
+  </script>
+</body>
+</html>
