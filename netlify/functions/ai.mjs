@@ -2,7 +2,7 @@ const MODEL_DEFAULT = "gemini-3.5-flash-lite";
 const MAX_MESSAGE_CHARS = 6000;
 const MAX_HISTORY_ITEMS = 3;
 const MAX_HISTORY_CHARS = 500;
-const MAX_OUTPUT_TOKENS = 1200;
+const MAX_OUTPUT_TOKENS = 1800;
 const RATE_WINDOW_MS = 60_000;
 const RATE_MAX = 12;
 
