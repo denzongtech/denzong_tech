@@ -80,7 +80,12 @@ async function callGemini({ apiKey, model, history, message, tool }) {
     body: JSON.stringify({
       systemInstruction: { parts: [{ text: SYSTEM_INSTRUCTION }] },
       contents,
-      generationConfig: { maxOutputTokens: MAX_OUTPUT_TOKENS },
+      generationConfig: {
+  maxOutputTokens: MAX_OUTPUT_TOKENS,
+  thinkingConfig: {
+    thinkingLevel: "low",
+  },
+},
     }),
     signal: AbortSignal.timeout(25_000),
   });
@@ -179,9 +184,28 @@ export default async (req) => {
       tool,
     });
     return json({ ok: true, answer, model, provider: "Google Gemini API" });
-  } catch (error) {
-    const status = Number.isInteger(error?.status) ? error.status : 502;
-    if (status >= 500) console.error("Denzong AI upstream request failed:", error?.message || "Unknown error");
-    return json({ ok: false, error: error?.message || "Denzong AI could not complete the request. Please try again." }, status);
+    } catch (error) {
+    const isTimeout =
+      error?.name === "TimeoutError" ||
+      error?.name === "AbortError";
+
+    const status = isTimeout
+      ? 504
+      : Number.isInteger(error?.status)
+        ? error.status
+        : 502;
+
+    const message = isTimeout
+      ? "Gemini took too long to respond. Please try again."
+      : error?.message ||
+        "Denzong AI could not complete the request. Please try again.";
+
+    console.error(
+      "Denzong AI request failed:",
+      error?.name || "UnknownError",
+      message
+    );
+
+    return json({ ok: false, error: message }, status);
   }
 };
