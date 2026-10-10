@@ -1,4 +1,4 @@
-const MODEL_DEFAULT = "gemini-3.8-flash";
+const MODEL_DEFAULT = "gemini-3.5-flash-lite";
 const MAX_MESSAGE_CHARS = 6000;
 const MAX_HISTORY_ITEMS = 3;
 const MAX_HISTORY_CHARS = 500;
@@ -83,11 +83,11 @@ async function callGemini({ apiKey, model, history, message, tool }) {
       generationConfig: {
   maxOutputTokens: MAX_OUTPUT_TOKENS,
   thinkingConfig: {
-    thinkingLevel: "low",
-  },
+  thinkingLevel: "minimal",
+},
 },
     }),
-    signal: AbortSignal.timeout(25_000),
+   signal: AbortSignal.timeout(50_000), 
   });
 
   let payload;
