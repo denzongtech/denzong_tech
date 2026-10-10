@@ -82,7 +82,7 @@ async function callGemini({ apiKey, model, history, message, tool }) {
       contents,
       generationConfig: { maxOutputTokens: MAX_OUTPUT_TOKENS },
     }),
-    signal: AbortSignal.timeout(35_000),
+    signal: AbortSignal.timeout(25_000),
   });
 
   let payload;
